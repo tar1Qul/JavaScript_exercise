@@ -1,26 +1,27 @@
 while (true) {
-    // Ask height in feet
-    let heightFeet = parseFloat(prompt("Enter your height in feet: "));
-    let heightCm = heightFeet * 30.48; // 1 foot = 30.48 cm
-    let heightM = heightCm / 100; // convert cm to meters
+    // Ask height in feet.inches (e.g., 5.11 for 5 feet 11 inches)
+    let heightInput = prompt("Enter your height: ");
+    let heightParts = heightInput.split(".");
+    let feet = parseInt(heightParts[0]);
+    let inches = heightParts[1] ? parseInt(heightParts[1]) : 0;
 
-    // Ask weight
+    let heightCm = feet * 30.48 + inches * 2.54;
+    let heightM = heightCm / 100;
+
     let weight = parseFloat(prompt("Enter your weight: "));
-    let unit = prompt("\nIs this weight in kg or lb? (kg/lb):").toLowerCase();
+    let unit = prompt("Is this weight in kg or lb? (kg/lb): ").toLowerCase();
 
     if (unit === "lb") {
-        weight = weight * 0.453592; // convert pounds to kg
+        weight = weight * 0.453592;
     }
 
-    // Calculate BMI
     let bmi = weight / (heightM ** 2);
 
     console.clear();
-    console.log(`\n\nHeight: ${heightFeet} ft = ${heightCm.toFixed(2)} cm = ${heightM.toFixed(2)} m`);
+    console.log(`\nHeight: ${feet} ft ${inches} in = ${heightCm.toFixed(2)} cm = ${heightM.toFixed(2)} m`);
     console.log(`Weight: ${weight.toFixed(2)} kg`);
     console.log(`\nYour BMI is: ${bmi.toFixed(2)}`);
 
-    // BMI category
     if (bmi < 18.5) {
         console.log("Category: Underweight");
     } else if (bmi < 24.9) {
@@ -31,9 +32,8 @@ while (true) {
         console.log("Category: Obese");
     }
 
-    // Ask to run again
     console.log("\n");
-    let again = prompt("Do you want to calculate again? (yes/no):");
+    let again = prompt("Do you want to calculate again? (yes/no): ");
     if (again.toLowerCase() !== "yes") {
         console.log("Program ended.");
         break;
