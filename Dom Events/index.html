@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Events</title>
+</head>
+<body>
+    <h1>Dom Events</h1>
+    <!-- option 1 for event handler -->
+    <button onclick="console.log(sokot)">click me</button>
+    <button onclick="console.log(limu)">another button</button>
+    <button id="" onclick="console.log('i am clicked')">third button</button>
+    <input type="Text" placeholder="enter any bullshit here">
+    <br><br>
+    <!-- option 2 for event handler -->
+    <button onclick="green()">make green</button>
+    <button onclick="yellow()">make yellow</button>
+    <button onclick="red()">make red</button>
+    <br><br>
+    <button id="btn-blue">make blue</button>
+    <br><br>
+    <button id="btn-make-purple">make purple</button>
+    
+
+    
+    <script>
+       const btnMakePurple = document.getElementById('btn-make-purple')
+        btnMakePurple.onclick = makePurle;
+       function makePurle (){
+            document.body.style.backgroundColor = 'purple'
+       }
+
+    </script>
+
+
+    <script src="js/events.js"></script>
+</body>
+</html>
