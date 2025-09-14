@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Buttons</title>
+  <style>
+    .content {
+      display: none; /* hide by default */
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <button id="btn1">Button 1</button>
+  <button id="btn2">Button 2</button>
+
+  <!-- Contents -->
+  <div id="content1" class="content">Button 1 Content</div>
+  <div id="content2" class="content">Button 2 Content</div>
+
+  <script>
+    const btn1 = document.getElementById("btn1");
+    const btn2 = document.getElementById("btn2");
+    const content1 = document.getElementById("content1");
+    const content2 = document.getElementById("content2");
+
+    btn1.addEventListener("click", () => {
+      content1.style.display = "block"; // show content1
+      content2.style.display = "none";  // hide content2
+    });
+
+    btn2.addEventListener("click", () => {
+      content1.style.display = "none";  // hide content1
+      content2.style.display = "block"; // show content2
+    });
+  </script>
+</body>
+</html>
