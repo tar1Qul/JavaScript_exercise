@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body> 
+    <script>
+        alert("MD. TARIQUL ISLAM ");
+        alert(233014214);
+
+        document.write("MD. TARIQUL ISLAM </br>");
+        document.write("id: 233014214");
+
+        console.log("MD. TARIQUL ISLAM </br>");
+        console.log("id: 233014214");
+    </script>
+</body>
+</html>
