@@ -1,0 +1,24 @@
+<script>
+
+    let letter = prompt("Enter a letter:");
+
+    switch (letter) {
+        case "a":
+            console.log("You entered a vowel.");
+            break;
+        case "e":
+            console.log("You entered a vowel.");
+            break;
+        case "i":
+            console.log("You entered a vowel.");
+            break;
+        case "o":
+            console.log("You entered a vowel.");
+            break;
+        case "u":
+            console.log("You entered a vowel.");
+            break;
+        default:
+            console.log("You entered a consonant.");
+    }
+    </script>
