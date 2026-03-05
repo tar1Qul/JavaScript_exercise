@@ -1,0 +1,45 @@
+<script>
+
+    let number = prompt("Enter a number:");
+
+    switch (number) {
+        case "1":
+            console.log("You entered one.");
+            break;
+        case "2":
+            console.log("You entered two.");
+            break;
+        case "3":
+            console.log("You entered three.");
+            break;
+        case "3":
+            console.log("You entered three.");
+            break;
+        case "3":
+            console.log("You entered three.");
+            break;
+        case "4":
+            console.log("You entered four.");
+            break;
+        case "5":
+            console.log("You entered five.");
+            break;
+        case "6":
+            console.log("You entered six.");
+            break;
+        case "7":
+            console.log("You entered seven.");
+            break;
+        case "8":
+            console.log("You entered eight.");
+            break;
+        case "9":
+            console.log("You entered nine.");
+            break;
+        case "10":
+            console.log("You entered ten.");
+            break;
+        default:
+            console.log("You entered a number other than 1, 2, 3, 4, 5, 6, 7, 8, 9, or 10.");
+    }
+    </script>
