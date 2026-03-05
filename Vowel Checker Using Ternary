@@ -1,0 +1,5 @@
+let letter = prompt("Enter a letter:").toLowerCase();
+
+(letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u")
+? document.write("Vowel")
+: document.write("Not a vowel");
