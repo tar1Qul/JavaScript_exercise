@@ -1,0 +1,15 @@
+<script>
+
+        let letter = parseFloat(prompt("Enter a letter:"));
+
+
+        if (letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u") {
+            document.write("this is a vowel: " + letter);
+        }
+
+        else {
+            document.write("this is not a vowel: " + letter);
+        }
+
+
+    </script>
