@@ -1,0 +1,21 @@
+<script>
+
+            let num1 = parseFloat(prompt("Enter first number:"));
+            let num2 = parseFloat(prompt("Enter second number:"));
+            let num3 = parseFloat(prompt("Enter third number:"));
+
+                if (num1 > num2 && num1 > num3 && num1 <= 100) {
+                    document.write("Num1 is the greatest: " + num1);
+                }
+                else if (num2 > num1 && num2 > num3 && num2 <= 100) {
+                    document.write("Num2 is the greatest: " + num2);
+                }
+                else if (num3 > num1 && num3 > num2 && num3 <= 100) {
+                    document.write("Num3 is the greatest: " + num3);
+                }
+                else {
+                    document.write("Invalid Numbers");
+                }
+            
+     
+    </script>
