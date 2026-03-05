@@ -1,0 +1,5 @@
+let marks = prompt("Enter marks:");
+
+let grade = (marks >= 40) ? "Pass" : "Fail";
+
+document.write("Result: " + grade);
