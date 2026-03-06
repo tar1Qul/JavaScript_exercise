@@ -1,0 +1,43 @@
+let choice;
+
+while (true) {
+
+    choice = prompt("Choose area to calculate:\n1. Circle\n2. Rectangle\n3. Triangle\n4. Square\nEnter x to quit");
+
+    if (choice === "x" || choice === "X") {
+        document.write("Program exited. Thank you!");
+        break;
+    }
+
+    switch (choice) {
+
+        case "1":
+            let radius = parseFloat(prompt("Enter radius of the circle:"));
+            let circleArea = 3.1416 * radius * radius;
+            document.write("Area of Circle = " + circleArea + "<br>");
+            break;
+
+        case "2":
+            let length = parseFloat(prompt("Enter length of the rectangle:"));
+            let width = parseFloat(prompt("Enter width of the rectangle:"));
+            let rectArea = length * width;
+            document.write("Area of Rectangle = " + rectArea + "<br>");
+            break;
+
+        case "3":
+            let base = parseFloat(prompt("Enter base of the triangle:"));
+            let height = parseFloat(prompt("Enter height of the triangle:"));
+            let triArea = 0.5 * base * height;
+            document.write("Area of Triangle = " + triArea + "<br>");
+            break;
+
+        case "4":
+            let side = parseFloat(prompt("Enter side of the square:"));
+            let sqArea = side * side;
+            document.write("Area of Square = " + sqArea + "<br>");
+            break;
+
+        default:
+            document.write("Invalid choice! Please try again.<br>");
+    }
+}
