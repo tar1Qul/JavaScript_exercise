@@ -1,0 +1,18 @@
+let price = parseFloat(prompt("Enter product price:"));
+let discount = 0;
+
+if(price >= 1000){
+    discount = price * 0.20;
+}
+else if(price >= 500){
+    discount = price * 0.10;
+}
+else if(price >= 200){
+    discount = price * 0.05;
+}
+
+let finalPrice = price - discount;
+
+document.write("Original Price = " + price + "<br>");
+document.write("Discount = " + discount + "<br>");
+document.write("Final Price = " + finalPrice);
