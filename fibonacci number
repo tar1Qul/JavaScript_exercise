@@ -1,0 +1,14 @@
+let n = parseInt(prompt("Enter how many Fibonacci numbers you want:"));
+
+let a = 0;
+let b = 1;
+
+document.write("Fibonacci Series: <br>");
+
+for (let i = 1; i <= n; i++) {
+    document.write(a + "<br>");
+
+    let next = a + b;
+    a = b;
+    b = next;
+}
