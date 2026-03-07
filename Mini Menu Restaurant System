@@ -1,0 +1,27 @@
+let item = parseInt(prompt("1 Burger\n2 Pizza\n3 Pasta\n4 Coffee\nChoose item:"));
+let qty = parseInt(prompt("Enter quantity:"));
+let price;
+
+switch(item){
+
+case 1:
+    price = 200 * qty;
+    break;
+
+case 2:
+    price = 500 * qty;
+    break;
+
+case 3:
+    price = 300 * qty;
+    break;
+
+case 4:
+    price = 120 * qty;
+    break;
+
+default:
+    document.write("Invalid item");
+}
+
+document.write("Total price = " + price);
