@@ -1,0 +1,7 @@
+ let sum = 0;
+    let n = parseInt(prompt("Enter how many numbers you want to sum:"));
+
+    for(let i =0; i <= n; i++){
+        sum = sum +i;
+    };
+    document.write("Sum = " + sum);
