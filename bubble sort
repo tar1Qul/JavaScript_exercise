@@ -1,0 +1,24 @@
+let n = parseInt(prompt("Enter how many numbers you want to sort:"));
+
+let arr = [];
+
+// Taking input numbers
+for (let i = 0; i < n; i++) {
+    arr[i] = parseFloat(prompt("Enter number " + (i + 1) + ":"));
+}
+
+document.write("Original Array: " + arr + "<br><br>");
+
+// Bubble Sort
+for (let i = 0; i < n - 1; i++) {
+    for (let j = 0; j < n - i - 1; j++) {
+        if (arr[j] > arr[j + 1]) {
+            // swap
+            let temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+        }
+    }
+}
+
+document.write("Sorted Array (Ascending): " + arr);
