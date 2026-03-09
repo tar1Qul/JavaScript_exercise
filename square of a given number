@@ -1,0 +1,4 @@
+let num = parseInt(prompt("Enter a number"));
+        let result = num * num;
+        
+        document.write("The square of " + num + " is: " + result);
