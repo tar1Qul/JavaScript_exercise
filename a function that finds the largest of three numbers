@@ -1,0 +1,15 @@
+function largest(a, b, c){
+
+    if(a >= b && a >= c){
+        document.write("Largest = " + a);
+    }
+    else if(b >= a && b >= c){
+        document.write("Largest = " + b);
+    }
+    else{
+        document.write("Largest = " + c);
+    }
+
+}
+
+largest(10, 5, 8);
