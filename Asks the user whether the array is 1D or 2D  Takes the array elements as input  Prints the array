@@ -1,0 +1,44 @@
+let type = prompt("Enter array type (1 for 1D, 2 for 2D):");
+
+if (type == 1) {
+
+    let size = parseInt(prompt("Enter size of 1D array:"));
+    let arr = [];
+
+    for (let i = 0; i < size; i++) {
+        arr[i] = prompt("Enter element " + (i + 1) + ":");
+    }
+
+    document.write("1D Array Elements:<br>");
+
+    for (let i = 0; i < size; i++) {
+        document.write(arr[i] + " ");
+    }
+
+} else if (type == 2) {
+
+    let rows = parseInt(prompt("Enter number of rows:"));
+    let cols = parseInt(prompt("Enter number of columns:"));
+
+    let arr = [];
+
+    for (let i = 0; i < rows; i++) {
+        arr[i] = [];
+
+        for (let j = 0; j < cols; j++) {
+            arr[i][j] = prompt("Enter element [" + i + "][" + j + "]:");
+        }
+    }
+
+    document.write("2D Array Elements:<br>");
+
+    for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+            document.write(arr[i][j] + " ");
+        }
+        document.write("<br>");
+    }
+
+} else {
+    document.write("Invalid array type!");
+}
